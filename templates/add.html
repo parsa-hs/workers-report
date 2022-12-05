@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Add a New Record{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+
+        <label for="worker">Name of Worker</label>
+        <input type="text" name="worker">
+
+        <label for="project">Project</label>
+        <input type="text" name="project">
+
+        <label for="activity">Select the Activity</label>
+        <input type="text" name="activity">
+
+        <label for="hours">Hours of Working</label>
+        <input type="text" name="hours">
+
+        <label for="date">Date</label>
+        <input type="date" name="date">
+
+        <button type="submit">Add Record</button>
+    </form>
+{% endblock %}

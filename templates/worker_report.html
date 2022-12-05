@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Report{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/worker_report.css') }}">
+{% endblock %}
+
+{% block content %}
+    <form method="post" id="workerForm">
+        <label for="monthrange">Select the month</label>
+        <input type="month" name="monthrange">
+        <label for="worker">Name of the worker</label>
+        <input name="worker" type="text">
+        <input class="submit" type="submit" value="Get Report">
+    </form>
+
+
+
+
+{% endblock %}

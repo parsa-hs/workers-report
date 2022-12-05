@@ -1,0 +1,26 @@
+body {
+    background-color: #06283D;
+}
+
+table {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px #47B5FF solid;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+th {
+    color: #256D85;
+    padding: 1rem;
+}
+
+td {
+    color: #47B5FF;
+    padding: 1rem;
+}

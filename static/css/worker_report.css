@@ -1,0 +1,47 @@
+body {
+    background-color: #06283D;
+}
+
+form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border: solid 3px #47B5FF;
+    padding: 1rem 2rem;
+    background-color: rgba(223, 246, 255, 0.3);
+    border-radius: 20px;
+    width: 35%;
+}
+
+label {
+    color: #47B5FF;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    font-size: 18px;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.submit {
+    width: 30%;
+    margin: 1.5rem auto 0.7rem;
+    background-color: #47B5FF;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}

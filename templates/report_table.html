@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Report Table{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/report_table.css') }}">
+{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Project</th>
+            <th>Activity</th>
+            <th>Period of time</th>
+            <th>Date</th>
+        </tr>
+
+        {% for result in results %}
+        <tr>
+            <td>{{ result.worker }}</td>
+            <td>{{ result.project }}</td>
+            <td>{{ result.activity }}</td>
+            <td>{{ result.hours }}</td>
+            <td>{{ result.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
